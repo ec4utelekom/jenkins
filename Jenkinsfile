@@ -27,9 +27,14 @@ pipeline {
         echo 'imported'
       }
     }
-    stage('Finalize') {
+    stage('Distribute SystemPreferences') {
       steps {
         echo 'Imported'
+      }
+    }
+    stage('Create JIRA for BA Review') {
+      steps {
+        echo 'approved'
       }
     }
   }
