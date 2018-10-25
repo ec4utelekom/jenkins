@@ -32,7 +32,7 @@ pipeline {
         echo 'Imported'
       }
     }
-    stage('Create JIRA for BA Review') {
+    stage('BA Review') {
       steps {
         echo 'approved'
         echo 'SAM: Status changed to "BA approval requried"'
