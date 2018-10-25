@@ -26,7 +26,7 @@ pipeline {
         echo 'imported'
       }
     }
-    stage('END') {
+    stage('Finalize') {
       steps {
         echo 'Imported'
       }
