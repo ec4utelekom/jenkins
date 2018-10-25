@@ -23,7 +23,6 @@ pipeline {
     }
     stage('Import into INT') {
       steps {
-        bat 'abc'
         echo 'imported'
       }
     }
