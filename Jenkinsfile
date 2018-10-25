@@ -35,6 +35,7 @@ pipeline {
     stage('Create JIRA for BA Review') {
       steps {
         echo 'approved'
+        echo 'SAM: Status changed to "BA approval requried"'
       }
     }
   }
