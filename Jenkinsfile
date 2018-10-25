@@ -4,6 +4,7 @@ pipeline {
     stage('Verify conflicts') {
       steps {
         echo 'ready to go'
+        echo 'Start verification'
       }
     }
     stage('Deliver Workspace') {
