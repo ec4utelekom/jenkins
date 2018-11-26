@@ -2,9 +2,18 @@ pipeline {
   agent any
   stages {
     stage('Verify conflicts') {
-      steps {
-        echo 'ready to go'
-        echo 'Start verification'
+      parallel {
+        stage('Verify conflicts') {
+          steps {
+            echo 'ready to go'
+            echo 'Start verification'
+          }
+        }
+        stage('') {
+          steps {
+            mail(subject: 'x', body: 'x', from: 'x', to: 'x')
+          }
+        }
       }
     }
     stage('Deliver Workspace') {
